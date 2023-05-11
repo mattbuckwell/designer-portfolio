@@ -2,11 +2,13 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.project-grid {
+    display: grid;
+}
+
 .project {
-    width: 300px;
     /* used in conjection with .overlay, position moves within this parent element vs the html document */
     position: relative;
-
 }
 
 .project img {

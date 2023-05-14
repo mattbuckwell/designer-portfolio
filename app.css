@@ -2,6 +2,15 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Container Section */
+.container {
+    /* container to hold all elements and to make it centre */
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Navabr Section */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -34,6 +43,7 @@ body {
     height: 24px;
 }
 
+/* Grid Section */
 .project-grid {
     display: grid;
     grid-template-areas: 
@@ -47,8 +57,6 @@ body {
     ;
     gap: 16px;
     width: 100%;
-    max-width: 90%;
-    margin: 0 auto;
 }
 
 
@@ -131,7 +139,17 @@ body {
     color: #fff;
 }
 
+/* Footer Section */
+.footer {
+    text-align: center;
+    padding: 64px;
+}
+
 @media only screen and (max-width: 1100px) {
+    .container {
+        max-width: 100%;
+    }
+
     .project-grid {
         grid-template-areas: 
             "eth eth"
@@ -141,7 +159,6 @@ body {
             "cup foam"
             "dimensional dimensional"
         ;
-        max-width: 100%;
     }
 }
 

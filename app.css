@@ -47,7 +47,9 @@ body {
     display: none;
 }
 
-.navbar .bar {
+.bar1,
+.bar2,
+.bar3 {
     background-color: #000;
     height: 4px;
     width: 36px;
@@ -218,16 +220,20 @@ body {
 }
 
 /* Animation Section */
-.hamburger .bar:nth-child(1) {
+.animateBar1 {
     animation: flipBar1 1s;
+    /* this element keeps the animation at its end state */
+    animation-fill-mode: forwards;
 }
 
-.hamburger .bar:nth-child(2) {
+.animateBar2 {
     animation: fadeBar2 1s;
+    animation-fill-mode: forwards;
 }
 
-.hamburger .bar:nth-child(3) {
+.animateBar3 {
     animation: flipBar3 1s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes flipBar1 {

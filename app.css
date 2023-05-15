@@ -57,6 +57,37 @@ body {
     border-radius: 10px;
 }
 
+/* Mobile NavBar Section */
+.mobileNav {
+    width: 80px;
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    padding: 16px;
+}
+
+.mobileNav a {
+    text-decoration: none;
+    color: #000;
+    margin: 16px 0;
+}
+
+.mobileNav a:hover {
+    text-decoration: underline;
+}
+
+.mobileNav img {
+    width: 24px;
+    height: 24px;
+}
+
 /* Grid Section */
 .project-grid {
     display: grid;
